@@ -9,3 +9,4 @@ Requires-Dist: pandas
 Requires-Dist: pymongo
 Requires-Dist: certifi
 Requires-Dist: numpy
+Requires-Dist: pymongo[srv]

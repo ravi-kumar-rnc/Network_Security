@@ -48,8 +48,7 @@ class NetworkDataExtract():
                 
             self.collection.insert_many(self.records)
                 
-            return len(self.records)
-            
+            return len(self.records)            
             
             
         except Exception as e:
@@ -60,6 +59,6 @@ if __name__ == '__main__':
     DATABASE="NetworkDataTest"
     COLLECTION="NetworkData"
     networobj = NetworkDataExtract()
-    records = networobj.csv_to_json_convertor(FILE_PATH)
+    records = networobj.csv_to_json_convertor(FILE_PATH)    
     noofrecords=networobj.pushing_data_to_mongodb(records,DATABASE,COLLECTION)
     print(noofrecords)
