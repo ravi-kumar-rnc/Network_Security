@@ -41,3 +41,39 @@ class TrainingPipeline:
             pass
         except Exception as e:
             raise NetworkSecurityException(e, sys)
+
+    def start_data_validation(self):
+        try:
+            pass
+        except Exception as e:
+            raise NetworkSecurityException(e, sys)
+        
+    def start_data_transformation(self):
+        try:
+            pass
+        except Exception as e:
+            raise NetworkSecurityException(e, sys)
+        
+    def start_model_trainer(self):
+        try:
+            pass
+        except Exception as e:
+            raise NetworkSecurityException(e, sys)
+        
+    def start_model_evaluation(self):
+        try:
+            pass
+        except Exception as e:
+            raise NetworkSecurityException(e, sys)
+        
+    def start_model_pusher(self):
+        try:
+            pass
+        except Exception as e:
+            raise NetworkSecurityException(e, sys)
+        
+    def run_pipeline(self):
+        try:
+            pass
+        except Exception as e:
+            raise NetworkSecurityException(e, sys)
