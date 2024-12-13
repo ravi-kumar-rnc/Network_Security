@@ -1,3 +1,0 @@
-[ 2024-12-11 13:51:56,124 ] 161 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
-[ 2024-12-11 13:51:58,382 ] 41 root - INFO - Starting data ingestion
-[ 2024-12-11 13:52:25,359 ] 67 root - INFO - Exporting train and test file path
