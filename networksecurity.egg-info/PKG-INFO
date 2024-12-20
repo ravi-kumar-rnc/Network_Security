@@ -10,3 +10,6 @@ Requires-Dist: pymongo
 Requires-Dist: certifi
 Requires-Dist: numpy
 Requires-Dist: pymongo[srv]
+Requires-Dist: scikit-learn
+Requires-Dist: dill
+Requires-Dist: pyyaml
