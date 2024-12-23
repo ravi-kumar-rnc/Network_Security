@@ -58,10 +58,10 @@ class DataIngestion:
             raise NetworkSecurityException(e, sys)
         
     def split_data_as_train_test(self, dataframe:pd.DataFrame):
-        try:
+        try:                        
             train_set, test_set = train_test_split(dataframe, 
                                                    test_size = self.data_ingestion_config.train_test_split_ratio
-                                                   )
+                                                   )            
             dir_path = os.path.dirname(self.data_ingestion_config.training_file_path)
             os.makedirs(dir_path, exist_ok = True)
             logging.info(f"Exporting train and test file path")
@@ -73,7 +73,7 @@ class DataIngestion:
         
     def initiate_data_ingestion(self):
         try:
-            dataframe = self.export_collection_as_dataframe()
+            dataframe = self.export_collection_as_dataframe()                       
             dataframe = self.export_data_into_feature_store(dataframe)
             self.split_data_as_train_test(dataframe=dataframe)
 

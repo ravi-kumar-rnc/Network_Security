@@ -18,6 +18,13 @@ class DataValidationArtifact:
     invalid_train_file_path: str
     invalid_test_file_path: str
     drift_report_file_path: str
+
+@dataclass
+class ClassificationMetricArtifact:
+    f1_score: float
+    precision_score: float
+    recall_score: float
+
 @dataclass
 class ModelTrainerArtifact:
     trained_model_file_path: str
@@ -32,6 +39,4 @@ class ModelEvaluationArtifact:
 class ModelPusherArtifact:
     pass
 
-@dataclass
-class ClassificationMetricArtifact:
-    pass
+
