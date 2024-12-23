@@ -3,3 +3,4 @@ venv
 Artifacts
 logs
 networksecurity.egg-info
+__pycache__
